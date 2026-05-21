@@ -25,7 +25,7 @@ import yaml
 from tensorboardX import SummaryWriter
 from tqdm import tqdm
 
-from torchlight.io import DictAction
+from torchlight import DictAction
 
 import resource
 rlimit = resource.getrlimit(resource.RLIMIT_NOFILE)
