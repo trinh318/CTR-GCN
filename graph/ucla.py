@@ -4,12 +4,11 @@ import numpy as np
 sys.path.extend(['../'])
 from graph import tools
 
-num_node = 20
+num_node = 13
 self_link = [(i, i) for i in range(num_node)]
-inward_ori_index = [(1, 2), (2, 3), (4, 3), (5, 3), (6, 5), (7, 6),
-                    (8, 7), (9, 3), (10, 9), (11, 10), (12, 11), (13, 1),
-                    (14, 13), (15, 14), (16, 15), (17, 1), (18, 17), (19, 18),
-                    (20, 19)]
+inward_ori_index = [(1, 2), (1, 5), (2, 5), (2, 3), (3, 4), (5, 6), 
+                    (6, 7), (2, 8), (5, 11), (8, 11), (8, 9), (9, 10), 
+                    (11, 12), (12, 13)]
 inward = [(i - 1, j - 1) for (i, j) in inward_ori_index]
 outward = [(j, i) for (i, j) in inward]
 neighbor = inward + outward

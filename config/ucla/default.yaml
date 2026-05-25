@@ -21,7 +21,7 @@ test_feeder_args:
 model: model.ctrgcn.Model
 model_args:
   num_class: 10
-  num_point: 20
+  num_point: 13
   num_person: 1
   graph: graph.ucla.Graph
   graph_args:
